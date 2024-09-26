@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladger book</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        .book{
+            background-color: transparent;
+            height: 100px;
+            width: auto;
+            margin: 0px 100px;
+        }
+        input{
+            height: 40px;
+            width: 200px;
+            padding: 0px 10px;
+            margin: 30px 0px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+        select{
+            height: 40px;
+            width: 200px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .add{
+            height: 40px;
+            width: 150px;
+            border-radius: 5px;
+            border: 1px solid transparent;
+            background-color: rgb(58, 245, 58);
+            color: white;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .res{
+            background-color: transparent;
+            margin: 0px 100px;
+        }
+        .res .th th{
+            background-color: #ccc;
+            width: 200px;
+            height: 30px;
+            border: 1px solid transparent;
+            border-radius: 3px;
+        }
+        .res .new th{
+            background-color: whitesmoke;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+     <div class="book">
+        <input type="text" placeholder="Enter The Name" class="text">
+        <input type="number" placeholder="Enter The Amount" class="number">
+        <select class="one">
+            <option>Select Catagory</option>
+            <option>Tea</option>
+            <option>Cofee</option>
+            <option>Cigratte</option>
+            <option>Raw Materials</option>
+            <option>Else</option>
+        </select>
+        <select class="two">
+            <option>Catagory(income & outgoing)</option>
+            <option>Income</option>
+            <option>Outcome</option>
+        </select>
+        <input type="date" class="date">
+        <button class="add">Add</button>
+     </div>
+     <div class="res">
+        <table>
+            <thead>
+                <tr class="th">
+                    <th>No.</th>
+                    <th>Date</th>
+                    <th>Name</th>
+                    <th>Catagory</th>
+                    <th>Catagory(in & out)</th>
+                    <th>Amount</th>
+                    <th>Net</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+        </table>
+     </div>
+</body>
+<script src="script.js"></script>
+</html>
